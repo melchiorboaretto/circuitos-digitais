@@ -1,0 +1,17 @@
+MUX 8bits:
+
+- Total logic elements: 8
+- Total pins: 25
+- Critical delay: S[3] FR) 10.124
+
+DECODER:
+
+- Total logic elements: 8
+- Total pins: 11
+- Critical delay: S[7] FF) 8.994 
+
+ENCODER:
+
+- Total logic elements: 7
+- Total pins: 12
+- Critical delay: Val FF) 10.134

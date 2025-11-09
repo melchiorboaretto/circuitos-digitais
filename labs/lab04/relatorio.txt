@@ -1,0 +1,6 @@
+ULA:
+
+- Total logic elements: 50
+- Total pins: 18
+- Critical delay: B[0] FF) 14.184
+

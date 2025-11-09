@@ -1,0 +1,4 @@
+divisor de freq:
+- Total logic elements: 49
+- Total pins: 3
+- Fmax: 1.46628 Hz

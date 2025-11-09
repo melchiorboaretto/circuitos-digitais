@@ -1,0 +1,6 @@
+ULA 4bits:
+
+- Total logic elements: 12
+- Total pins: 16
+- Critical delay: A[0] FF) 12.583
+

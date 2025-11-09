@@ -1,0 +1,14 @@
+rca4:
+- Total logic elements: 10
+- Total pins: 14
+- Critical delay: 10.885
+
+rca8:
+- Total logic elements: 18
+- Total pins: 25
+- Critical delay: 12.807
+
+rca16:
+- Total logic elements: 38
+- Total pins: 49
+- Critical delay: 19.555

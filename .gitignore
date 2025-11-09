@@ -1,0 +1,55 @@
+# ============================================================
+# Quartus II 13.0sp1 Git Ignore - Multi-level project layout
+# ============================================================
+
+# Ignore generated build folders at any depth
+**/db/
+**/incremental_db/
+**/output_files/
+**/simulation/
+**/timing/
+**/testbench/
+**/*_sim/
+
+# Quartus II temporary and generated files
+*_generation_script*
+*_inst.vhd
+*.bak
+*.cmp
+*.done
+*.eqn
+*.hex
+*.html
+*.htm
+*.jdi
+*.pin
+*.pof
+*.sof
+*.rpt
+*.smsg
+*.summary
+*.tcl
+*.qar
+*.qarlog
+*.qws
+*.map
+*.fit
+*.sta
+*.ddb
+*.qdf
+*~
+*sopc_*
+*sopc_builder*
+*example*
+PLLJ_PLLSPE_INFO.txt
+
+!*.txt
+!*.md
+
+# Explicitly keep timing and memory init files
+!*.sdc
+!*.mif
+
+# ============================================================
+# End
+# ============================================================

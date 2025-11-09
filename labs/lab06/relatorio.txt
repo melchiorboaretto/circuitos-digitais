@@ -1,0 +1,7 @@
+ULA4b + Display:
+
+  - Total logic elements: 19
+  - Total pins: 19	
+
+  - Critical delay:
+      I/O = B[1]/segC -> FF. 11.397
