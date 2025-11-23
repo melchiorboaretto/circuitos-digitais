@@ -3,6 +3,7 @@ set_global_assignment -name BDF_FILE ../multiplexer/mux4b.bdf
 set_global_assignment -name BDF_FILE ../multiplexer/mux8b.bdf
 set_global_assignment -name BDF_FILE ../multiplexer/mux8b8.bdf
 set_global_assignment -name BDF_FILE tap8.bdf
+set_global_assignment -name BDF_FILE signInv8b.bdf
 set_global_assignment -name BDF_FILE FAM.bdf
 set_global_assignment -name BDF_FILE clu4.bdf
 set_global_assignment -name BDF_FILE cslaclas8.bdf
