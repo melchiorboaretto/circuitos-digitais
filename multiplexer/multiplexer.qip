@@ -1,0 +1,4 @@
+set_global_assignment -name VHDL_FILE ../multiplexer/mux2p1.vhd
+set_global_assignment -name VHDL_FILE ../multiplexer/mux4b.vhd
+set_global_assignment -name VHDL_FILE ../multiplexer/mux8b.vhd
+set_global_assignment -name VHDL_FILE ../multiplexer/mux8b8.vhd

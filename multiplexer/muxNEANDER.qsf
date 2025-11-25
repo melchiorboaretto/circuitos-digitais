@@ -17,15 +17,15 @@
 # -------------------------------------------------------------------------- #
 #
 # Quartus II 64-Bit
-# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 10:45:42  November 21, 2025
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 00:09:11  November 25, 2025
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		ulaNEANDER_assignment_defaults.qdf
+#		muxNEANDER_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -36,27 +36,16 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY ula8bNEANDER
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:45:42  NOVEMBER 21, 2025"
+set_global_assignment -name TOP_LEVEL_ENTITY muxNEANDER
+set_global_assignment -name BDF_FILE mux2p1.bdf
+set_global_assignment -name BDF_FILE mux4b.bdf
+set_global_assignment -name BDF_FILE mux8b.bdf
+set_global_assignment -name BDF_FILE mux8b8.bdf
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:09:11  NOVEMBER 25, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "//HOMES/mbneto/Desktop/circuitos-digitais/arithmetic-logic-unit/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name QIP_FILE ../multiplexer/multiplexer.qip
-set_global_assignment -name BDF_FILE tap8.bdf
-set_global_assignment -name BDF_FILE signInv8b.bdf
-set_global_assignment -name BDF_FILE FAM.bdf
-set_global_assignment -name BDF_FILE clu4.bdf
-set_global_assignment -name BDF_FILE cslaclas8.bdf
-set_global_assignment -name BDF_FILE ula8bNEANDER.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE onda.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/melch/cirdig/circuitos-digitais/arithmetic-logic-unit/onda.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

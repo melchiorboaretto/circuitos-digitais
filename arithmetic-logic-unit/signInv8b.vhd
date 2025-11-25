@@ -1,0 +1,131 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- PROGRAM		"Quartus II 64-Bit"
+-- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+-- CREATED		"Tue Nov 25 00:34:25 2025"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY signInv8b IS 
+	PORT
+	(
+		E :  IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+		S :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 0)
+	);
+END signInv8b;
+
+ARCHITECTURE bdf_type OF signInv8b IS 
+
+SIGNAL	S_ALTERA_SYNTHESIZED :  STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_27 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_28 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_29 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_30 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_31 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_32 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_33 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_34 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_35 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_36 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_37 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_38 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_25 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_26 :  STD_LOGIC;
+
+
+BEGIN 
+
+
+
+S_ALTERA_SYNTHESIZED(0) <= NOT(SYNTHESIZED_WIRE_27);
+
+
+
+SYNTHESIZED_WIRE_28 <= NOT(E(1));
+
+
+
+S_ALTERA_SYNTHESIZED(1) <= SYNTHESIZED_WIRE_27 XOR SYNTHESIZED_WIRE_28;
+
+
+SYNTHESIZED_WIRE_30 <= SYNTHESIZED_WIRE_28 AND SYNTHESIZED_WIRE_27;
+
+
+S_ALTERA_SYNTHESIZED(2) <= SYNTHESIZED_WIRE_29 XOR SYNTHESIZED_WIRE_30;
+
+
+SYNTHESIZED_WIRE_32 <= SYNTHESIZED_WIRE_29 AND SYNTHESIZED_WIRE_30;
+
+
+S_ALTERA_SYNTHESIZED(3) <= SYNTHESIZED_WIRE_31 XOR SYNTHESIZED_WIRE_32;
+
+
+SYNTHESIZED_WIRE_33 <= SYNTHESIZED_WIRE_31 AND SYNTHESIZED_WIRE_32;
+
+
+S_ALTERA_SYNTHESIZED(4) <= SYNTHESIZED_WIRE_33 XOR SYNTHESIZED_WIRE_34;
+
+
+SYNTHESIZED_WIRE_36 <= SYNTHESIZED_WIRE_33 AND SYNTHESIZED_WIRE_34;
+
+
+S_ALTERA_SYNTHESIZED(5) <= SYNTHESIZED_WIRE_35 XOR SYNTHESIZED_WIRE_36;
+
+
+SYNTHESIZED_WIRE_37 <= SYNTHESIZED_WIRE_36 AND SYNTHESIZED_WIRE_35;
+
+
+SYNTHESIZED_WIRE_29 <= NOT(E(2));
+
+
+
+S_ALTERA_SYNTHESIZED(6) <= SYNTHESIZED_WIRE_37 XOR SYNTHESIZED_WIRE_38;
+
+
+SYNTHESIZED_WIRE_26 <= SYNTHESIZED_WIRE_38 AND SYNTHESIZED_WIRE_37;
+
+
+S_ALTERA_SYNTHESIZED(7) <= SYNTHESIZED_WIRE_25 XOR SYNTHESIZED_WIRE_26;
+
+
+SYNTHESIZED_WIRE_31 <= NOT(E(3));
+
+
+
+SYNTHESIZED_WIRE_34 <= NOT(E(4));
+
+
+
+SYNTHESIZED_WIRE_35 <= NOT(E(5));
+
+
+
+SYNTHESIZED_WIRE_38 <= NOT(E(6));
+
+
+
+SYNTHESIZED_WIRE_25 <= NOT(E(7));
+
+
+
+SYNTHESIZED_WIRE_27 <= NOT(E(0));
+
+
+S <= S_ALTERA_SYNTHESIZED;
+
+END bdf_type;
