@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 360 184 536 200)
+	(rect 384 184 560 200)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "P" (rect 90 0 97 12)(font "Arial" ))
 	(pt 0 8)
@@ -248,18 +248,6 @@ applicable agreement for further details.
 	(pt 208 104)
 )
 (connector
-	(pt 280 192)
-	(pt 280 96)
-)
-(connector
-	(pt 272 96)
-	(pt 280 96)
-)
-(connector
-	(pt 280 96)
-	(pt 312 96)
-)
-(connector
 	(pt 472 104)
 	(pt 376 104)
 )
@@ -280,14 +268,21 @@ applicable agreement for further details.
 	(pt 384 232)
 )
 (connector
-	(pt 368 192)
-	(pt 360 192)
+	(pt 280 96)
+	(pt 280 192)
 )
 (connector
-	(pt 360 192)
+	(pt 272 96)
+	(pt 280 96)
+)
+(connector
+	(pt 280 96)
+	(pt 312 96)
+)
+(connector
 	(pt 280 192)
+	(pt 384 192)
 )
 (junction (pt 184 88))
 (junction (pt 192 104))
 (junction (pt 280 96))
-(junction (pt 360 192))

@@ -1,0 +1,7 @@
+set_global_assignment -name QIP_FILE ../multiplexer/multiplexer.qip
+set_global_assignment -name VHDL_FILE ../arithmetic-logic-unit/tap8.vhd
+set_global_assignment -name VHDL_FILE ../arithmetic-logic-unit/signInv8b.vhd
+set_global_assignment -name VHDL_FILE ../arithmetic-logic-unit/FAM.vhd
+set_global_assignment -name VHDL_FILE ../arithmetic-logic-unit/clu4.vhd
+set_global_assignment -name VHDL_FILE ../arithmetic-logic-unit/cslaclas8.vhd
+set_global_assignment -name VHDL_FILE ../arithmetic-logic-unit/ula8bNEANDER.vhd
