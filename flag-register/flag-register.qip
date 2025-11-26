@@ -1,2 +1,2 @@
-set_global_assignment -name VHDL_FILE flag_register.vhd
+set_global_assignment -name VHDL_FILE ../flag-register/flag_register.vhd
 set_global_assignment -name QIP_FILE ../multiplexer/multiplexer.qip
