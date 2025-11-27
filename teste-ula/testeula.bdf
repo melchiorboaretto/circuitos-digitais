@@ -57,7 +57,7 @@ applicable agreement for further details.
 	(input)
 	(rect 200 320 368 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 30 12)(font "Arial" ))
+	(text "reset" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -68,6 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 152 336 200 352))
 )
 (pin
 	(output)
@@ -340,6 +341,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 	(annotation_block (location)(rect 1024 704 1080 720))
+)
+(pin
+	(output)
+	(rect 592 784 768 800)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "validation_bit" (rect 90 0 154 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 496 120 632 248)
@@ -665,6 +682,35 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 360 664 488 760)
+	(text "encodernew" (rect 5 0 78 14)(font "Arial" (font_size 8)))
+	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "D[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "D[7..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "Q[2..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "Q[2..0]" (rect 70 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
+	)
+	(port
+		(pt 128 48)
+		(output)
+		(text "Val" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Val" (rect 89 43 107 57)(font "Arial" (font_size 8)))
+		(line (pt 128 48)(pt 112 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
+	)
+)
 (connector
 	(text "saida[3..0]" (rect 1023 752 1074 764)(font "Arial" ))
 	(pt 1072 768)
@@ -807,29 +853,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "se[2..0]" (rect 646 680 683 692)(font "Arial" ))
-	(pt 576 696)
-	(pt 696 696)
-	(bus)
-)
-(connector
-	(pt 632 152)
-	(pt 648 152)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS50>>" (rect 633 136 745 148)(font "Arial" )(invisible))
-	(pt 648 152)
-	(pt 816 152)
-	(bus)
-)
-(connector
-	(text "se[7..0]" (rect 632 336 644 373)(font "Arial" )(vertical))
-	(pt 648 384)
-	(pt 648 152)
-	(bus)
-)
-(connector
 	(text "hardsel[1]" (rect 289 240 337 252)(font "Arial" ))
 	(pt 168 256)
 	(pt 320 256)
@@ -857,8 +880,55 @@ applicable agreement for further details.
 	(pt 496 184)
 	(pt 456 184)
 )
+(connector
+	(pt 696 696)
+	(pt 488 696)
+	(bus)
+)
+(connector
+	(pt 488 712)
+	(pt 584 712)
+)
+(connector
+	(pt 584 712)
+	(pt 584 792)
+)
+(connector
+	(pt 584 792)
+	(pt 592 792)
+)
+(connector
+	(pt 648 152)
+	(pt 648 400)
+	(bus)
+)
+(connector
+	(pt 648 400)
+	(pt 304 400)
+	(bus)
+)
+(connector
+	(pt 632 152)
+	(pt 648 152)
+	(bus)
+)
+(connector
+	(pt 648 152)
+	(pt 816 152)
+	(bus)
+)
+(connector
+	(pt 304 400)
+	(pt 304 696)
+	(bus)
+)
+(connector
+	(pt 304 696)
+	(pt 360 696)
+	(bus)
+)
 (junction (pt 432 344))
 (junction (pt 752 344))
 (junction (pt 1000 152))
-(junction (pt 648 152))
 (junction (pt 168 288))
+(junction (pt 648 152))
