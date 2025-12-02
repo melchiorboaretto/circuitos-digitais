@@ -1,3 +1,4 @@
 set_global_assignment -name VHDL_FILE ../special-registers/register8b.vhd
+set_global_assignment -name VHDL_FILE ../special-registers/register1b.vhd
 set_global_assignment -name VHDL_FILE ../special-registers/gpr_bank.vhd
 set_global_assignment -name QIP_FILE ../multiplexer/multiplexer.qip

@@ -14,47 +14,65 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
--- CREATED		"Tue Dec 02 17:31:22 2025"
+-- CREATED		"Tue Dec 02 17:49:15 2025"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
--- use the following when compiling in Quartus II
-LIBRARY lpm;
-USE lpm.lpm_components.all; 
 
--- use the following when compiling in third party tools --
--- add lpm_pack.vhd from the Quartus II library
---LIBRARY work;
---USE work.lpm_components.all;
+LIBRARY work;
 
-ENTITY lpm_ram_dq_0 IS 
-PORT 
-( 
-	inclock	:	IN	 STD_LOGIC;
-	we	:	IN	 STD_LOGIC;
-	address	:	IN	 STD_LOGIC_VECTOR(7 DOWNTO 0);
-	data	:	IN	 STD_LOGIC_VECTOR(7 DOWNTO 0);
-	q	:	OUT	 STD_LOGIC_VECTOR(7 DOWNTO 0)
-); 
-END lpm_ram_dq_0;
+ENTITY register1b IS 
+	PORT
+	(
+		clock :  IN  STD_LOGIC;
+		enable :  IN  STD_LOGIC;
+		reset :  IN  STD_LOGIC;
+		D :  IN  STD_LOGIC;
+		S :  OUT  STD_LOGIC
+	);
+END register1b;
 
-ARCHITECTURE bdf_type OF lpm_ram_dq_0 IS 
+ARCHITECTURE bdf_type OF register1b IS 
+
+COMPONENT mux2p1
+	PORT(A : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 Sel : IN STD_LOGIC;
+		 S : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+SIGNAL	clock_real :  STD_LOGIC;
+SIGNAL	D0 :  STD_LOGIC;
+SIGNAL	S_ALTERA_SYNTHESIZED0 :  STD_LOGIC;
+SIGNAL	seletor :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+
+
 BEGIN 
 
--- instantiate LPM macrofunction 
 
-b2v_inst : lpm_ram_dq
-GENERIC MAP(LPM_ADDRESS_CONTROL => "REGISTERED",
-			LPM_FILE => "neander.mif",
-			LPM_INDATA => "REGISTERED",
-			LPM_NUMWORDS => 256,
-			LPM_OUTDATA => "UNREGISTERED",
-			LPM_WIDTH => 8,
-			LPM_WIDTHAD => 8)
-PORT MAP(inclock => inclock,
-		 we => we,
-		 address => address,
-		 data => data,
-		 q => q);
 
-END bdf_type; 
+PROCESS(clock_real,reset)
+BEGIN
+IF (reset = '0') THEN
+	S <= '0';
+ELSIF (RISING_EDGE(clock_real)) THEN
+	S <= SYNTHESIZED_WIRE_0;
+END IF;
+END PROCESS;
+
+
+seletor <= NOT(enable);
+
+
+
+b2v_inst9 : mux2p1
+PORT MAP(A => D0,
+		 B => S_ALTERA_SYNTHESIZED0,
+		 Sel => seletor,
+		 S => SYNTHESIZED_WIRE_0);
+
+clock_real <= clock;
+
+END bdf_type;

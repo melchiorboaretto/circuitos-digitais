@@ -148,7 +148,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 576 552 704 648)
+	(rect 272 552 400 648)
 	(text "mux8b" (rect 5 0 42 14)(font "Arial" (font_size 8)))
 	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -184,28 +184,46 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 512 376 560 408)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 21 26 33)(font "Arial" ))
+	(rect 808 712 936 840)
+	(text "register8b" (rect 5 0 62 14)(font "Arial" (font_size 8)))
+	(text "rdadosmIFslashID" (rect 8 112 98 124)(font "Arial" ))
 	(port
-		(pt 0 16)
+		(pt 0 32)
 		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
+		(text "D[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "D[7..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 48 16)
+		(pt 0 48)
+		(input)
+		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "enable" (rect 21 43 58 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 59 50 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 75 50 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 128 32)
 		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
+		(text "S[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "S[7..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
+		(rectangle (rect 16 16 112 112))
 	)
 )
 (symbol
@@ -262,7 +280,7 @@ applicable agreement for further details.
 	)
 	(parameter
 		"LPM_FILE"
-		"\"neander.hex\""
+		"\"neander.mif\""
 		"File containing initial contents of memory array"
 	)
 	(parameter
@@ -302,49 +320,6 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 856 16 1120 128))
 )
-(symbol
-	(rect 808 712 936 840)
-	(text "register8b" (rect 5 0 62 14)(font "Arial" (font_size 8)))
-	(text "rdadosmIFslashID" (rect 8 112 98 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "D[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "D[7..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "enable" (rect 21 43 58 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "reset" (rect 21 59 50 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 75 50 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "S[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[7..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 112))
-	)
-)
 (connector
 	(text "clk" (rect 796 592 810 604)(font "Arial" ))
 	(pt 816 600)
@@ -354,50 +329,6 @@ applicable agreement for further details.
 	(text "write" (rect 782 616 804 628)(font "Arial" ))
 	(pt 816 632)
 	(pt 784 632)
-)
-(connector
-	(text "Flush" (rect 773 768 800 780)(font "Arial" ))
-	(pt 808 776)
-	(pt 752 776)
-)
-(connector
-	(text "clk" (rect 792 776 806 788)(font "Arial" ))
-	(pt 808 792)
-	(pt 792 792)
-)
-(connector
-	(text "dadoRDM[7..0]" (rect 958 723 1032 735)(font "Arial" ))
-	(pt 936 744)
-	(pt 1008 744)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS1904>>" (rect 724 568 847 580)(font "Arial" )(invisible))
-	(pt 816 584)
-	(pt 704 584)
-	(bus)
-)
-(connector
-	(text "dadoRDM[7..0]" (rect 484 592 558 604)(font "Arial" ))
-	(pt 536 600)
-	(pt 576 600)
-	(bus)
-)
-(connector
-	(text "op_addr_load" (rect 508 616 572 628)(font "Arial" ))
-	(pt 512 616)
-	(pt 576 616)
-)
-(connector
-	(text "Flush" (rect 581 376 608 388)(font "Arial" ))
-	(pt 560 392)
-	(pt 600 392)
-)
-(connector
-	(text "pc[7..0]" (rect 462 576 499 588)(font "Arial" ))
-	(pt 576 584)
-	(pt 504 584)
-	(bus)
 )
 (connector
 	(text "write_data[7..0]" (rect 728 552 803 564)(font "Arial" ))
@@ -412,16 +343,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ramout[7..0]" (rect 681 736 741 748)(font "Arial" ))
-	(pt 808 744)
-	(pt 744 744)
-	(bus)
-)
-(connector
-	(pt 512 392)
-	(pt 504 392)
-)
-(connector
 	(pt 504 392)
 	(pt 504 352)
 )
@@ -430,7 +351,56 @@ applicable agreement for further details.
 	(pt 488 352)
 )
 (connector
+	(text "pc[7..0]" (rect 158 576 195 588)(font "Arial" ))
+	(pt 200 584)
+	(pt 272 584)
+	(bus)
+)
+(connector
+	(text "dadoRDM[7..0]" (rect 180 592 254 604)(font "Arial" ))
+	(pt 232 600)
+	(pt 272 600)
+	(bus)
+)
+(connector
+	(text "op_addr_load" (rect 204 616 268 628)(font "Arial" ))
+	(pt 208 616)
+	(pt 272 616)
+)
+(connector
+	(text "Flush" (rect 773 768 800 780)(font "Arial" ))
+	(pt 808 776)
+	(pt 752 776)
+)
+(connector
+	(text "clk" (rect 792 776 806 788)(font "Arial" ))
+	(pt 808 792)
+	(pt 792 792)
+)
+(connector
+	(text "dadoRDM[7..0]" (rect 958 723 1032 735)(font "Arial" ))
+	(pt 1008 744)
+	(pt 936 744)
+	(bus)
+)
+(connector
+	(text "ramout[7..0]" (rect 681 736 741 748)(font "Arial" ))
+	(pt 808 744)
+	(pt 744 744)
+	(bus)
+)
+(connector
 	(text "cargaRDM" (rect 762 752 813 764)(font "Arial" ))
 	(pt 808 760)
 	(pt 744 760)
+)
+(connector
+	(pt 400 584)
+	(pt 816 584)
+	(bus)
+)
+(connector
+	(text "Flush" (rect 581 376 608 388)(font "Arial" ))
+	(pt 504 392)
+	(pt 600 392)
 )

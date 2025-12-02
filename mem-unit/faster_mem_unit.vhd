@@ -13,8 +13,8 @@
 -- applicable agreement for further details.
 
 -- PROGRAM		"Quartus II 64-Bit"
--- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Sun Nov 30 16:08:45 2025"
+-- VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+-- CREATED		"Tue Dec 02 17:31:22 2025"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -92,10 +92,6 @@ PORT MAP(Sel => op_addr_load,
 		 S => SYNTHESIZED_WIRE_0);
 
 
-Flush <= NOT(flushall);
-
-
-
 b2v_rdadosmIFslashID : register8b
 PORT MAP(enable => cargaRDM,
 		 reset => Flush,
@@ -104,5 +100,6 @@ PORT MAP(enable => cargaRDM,
 		 S => dadoRDM);
 
 S <= dadoRDM;
+Flush <= flushall;
 
 END bdf_type;
