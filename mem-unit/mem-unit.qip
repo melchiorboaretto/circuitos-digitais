@@ -1,0 +1,4 @@
+set_global_assignment -name QIP_FILE "../special-registers/register8b.qip"
+set_global_assignment -name VHDL_FILE ../mem-unit/mem_unit.vhd
+set_global_assignment -name VHDL_FILE ../mem-unit/faster_mem_unit.vhd
+set_global_assignment -name VHDL_FILE ../mem-unit/lpm_ram_dq_0.vhd
