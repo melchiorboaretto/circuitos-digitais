@@ -62,96 +62,6 @@ SIGNAL("reset")
 	PARENT = "";
 }
 
-SIGNAL("saida_ac")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("saida_ac[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
-SIGNAL("saida_ac[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "saida_ac";
-}
-
 SIGNAL("saida_pc")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -252,7 +162,7 @@ SIGNAL("step")
 	PARENT = "";
 }
 
-SIGNAL("saida_memoria")
+SIGNAL("saida_acumulador")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -262,114 +172,184 @@ SIGNAL("saida_memoria")
 	PARENT = "";
 }
 
-SIGNAL("saida_memoria[7]")
+SIGNAL("saida_acumulador[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[6]")
+SIGNAL("saida_acumulador[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[5]")
+SIGNAL("saida_acumulador[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[4]")
+SIGNAL("saida_acumulador[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[3]")
+SIGNAL("saida_acumulador[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[2]")
+SIGNAL("saida_acumulador[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[1]")
+SIGNAL("saida_acumulador[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("saida_memoria[0]")
+SIGNAL("saida_acumulador[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "saida_memoria";
+	PARENT = "saida_acumulador";
 }
 
-SIGNAL("seletor_pc")
+SIGNAL("saida_rdm")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 2;
+	WIDTH = 8;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("seletor_pc[1]")
+SIGNAL("saida_rdm[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "seletor_pc";
+	PARENT = "saida_rdm";
 }
 
-SIGNAL("seletor_pc[0]")
+SIGNAL("saida_rdm[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "seletor_pc";
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("saida_rdm[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("saida_rdm[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("saida_rdm[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("saida_rdm[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("saida_rdm[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("saida_rdm[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "saida_rdm";
+}
+
+SIGNAL("Nout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
 TRANSITION_LIST("clock")
@@ -401,78 +381,6 @@ TRANSITION_LIST("reset")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("saida_ac[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -562,7 +470,7 @@ TRANSITION_LIST("step")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[7]")
+TRANSITION_LIST("saida_acumulador[7]")
 {
 	NODE
 	{
@@ -571,7 +479,7 @@ TRANSITION_LIST("saida_memoria[7]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[6]")
+TRANSITION_LIST("saida_acumulador[6]")
 {
 	NODE
 	{
@@ -580,7 +488,7 @@ TRANSITION_LIST("saida_memoria[6]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[5]")
+TRANSITION_LIST("saida_acumulador[5]")
 {
 	NODE
 	{
@@ -589,7 +497,7 @@ TRANSITION_LIST("saida_memoria[5]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[4]")
+TRANSITION_LIST("saida_acumulador[4]")
 {
 	NODE
 	{
@@ -598,7 +506,7 @@ TRANSITION_LIST("saida_memoria[4]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[3]")
+TRANSITION_LIST("saida_acumulador[3]")
 {
 	NODE
 	{
@@ -607,7 +515,7 @@ TRANSITION_LIST("saida_memoria[3]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[2]")
+TRANSITION_LIST("saida_acumulador[2]")
 {
 	NODE
 	{
@@ -616,7 +524,7 @@ TRANSITION_LIST("saida_memoria[2]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[1]")
+TRANSITION_LIST("saida_acumulador[1]")
 {
 	NODE
 	{
@@ -625,7 +533,7 @@ TRANSITION_LIST("saida_memoria[1]")
 	}
 }
 
-TRANSITION_LIST("saida_memoria[0]")
+TRANSITION_LIST("saida_acumulador[0]")
 {
 	NODE
 	{
@@ -634,7 +542,7 @@ TRANSITION_LIST("saida_memoria[0]")
 	}
 }
 
-TRANSITION_LIST("seletor_pc[1]")
+TRANSITION_LIST("saida_rdm[7]")
 {
 	NODE
 	{
@@ -643,7 +551,70 @@ TRANSITION_LIST("seletor_pc[1]")
 	}
 }
 
-TRANSITION_LIST("seletor_pc[0]")
+TRANSITION_LIST("saida_rdm[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("saida_rdm[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("saida_rdm[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("saida_rdm[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("saida_rdm[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("saida_rdm[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("saida_rdm[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Nout")
 {
 	NODE
 	{
@@ -780,7 +751,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac";
+	CHANNEL = "saida_acumulador";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 13;
@@ -790,7 +761,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[7]";
+	CHANNEL = "saida_acumulador[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 14;
@@ -800,7 +771,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[6]";
+	CHANNEL = "saida_acumulador[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 15;
@@ -810,7 +781,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[5]";
+	CHANNEL = "saida_acumulador[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 16;
@@ -820,7 +791,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[4]";
+	CHANNEL = "saida_acumulador[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 17;
@@ -830,7 +801,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[3]";
+	CHANNEL = "saida_acumulador[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 18;
@@ -840,7 +811,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[2]";
+	CHANNEL = "saida_acumulador[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 19;
@@ -850,7 +821,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[1]";
+	CHANNEL = "saida_acumulador[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 20;
@@ -860,7 +831,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_ac[0]";
+	CHANNEL = "saida_acumulador[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 21;
@@ -870,7 +841,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria";
+	CHANNEL = "saida_rdm";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 22;
@@ -880,7 +851,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[7]";
+	CHANNEL = "saida_rdm[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 23;
@@ -890,7 +861,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[6]";
+	CHANNEL = "saida_rdm[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 24;
@@ -900,7 +871,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[5]";
+	CHANNEL = "saida_rdm[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 25;
@@ -910,7 +881,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[4]";
+	CHANNEL = "saida_rdm[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 26;
@@ -920,7 +891,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[3]";
+	CHANNEL = "saida_rdm[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 27;
@@ -930,7 +901,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[2]";
+	CHANNEL = "saida_rdm[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 28;
@@ -940,7 +911,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[1]";
+	CHANNEL = "saida_rdm[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 29;
@@ -950,7 +921,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida_memoria[0]";
+	CHANNEL = "saida_rdm[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 30;
@@ -960,32 +931,11 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "seletor_pc";
+	CHANNEL = "Nout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
 	TREE_LEVEL = 0;
-	CHILDREN = 32, 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "seletor_pc[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 32;
-	TREE_LEVEL = 1;
-	PARENT = 31;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "seletor_pc[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 33;
-	TREE_LEVEL = 1;
-	PARENT = 31;
 }
 
 TIME_BAR
