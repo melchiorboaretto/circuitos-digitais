@@ -20,14 +20,14 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 136 112)
+	(rect 16 16 144 112)
 	(text "timerNEANDER" (rect 5 0 88 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "inc" (rect 0 0 16 14)(font "Arial" (font_size 8)))
-		(text "inc" (rect 21 27 37 41)(font "Arial" (font_size 8)))
+		(text "goto_t0" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "goto_t0" (rect 21 27 63 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
@@ -45,13 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 120 32)
+		(pt 128 32)
 		(output)
-		(text "S[1..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[1..0]" (rect 63 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
+		(text "t[7..0]" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "t[7..0]" (rect 76 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 80))
+		(rectangle (rect 16 16 112 80))
 	)
 )
