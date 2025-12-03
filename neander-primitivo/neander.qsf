@@ -74,13 +74,13 @@ set_location_assignment PIN_G3 -to step
 set_location_assignment PIN_B1 -to Nout
 set_location_assignment PIN_B2 -to Zout
 set_location_assignment PIN_J6 -to debugEnable
-set_location_assignment PIN_A13 -to highAC[6]
+set_location_assignment PIN_A15 -to highAC[6]
 set_location_assignment PIN_B13 -to highAC[5]
 set_location_assignment PIN_C13 -to highAC[4]
 set_location_assignment PIN_A14 -to highAC[3]
 set_location_assignment PIN_B14 -to highAC[2]
 set_location_assignment PIN_E14 -to highAC[1]
-set_location_assignment PIN_A15 -to highAC[0]
+set_location_assignment PIN_A13 -to highAC[0]
 set_location_assignment PIN_G15 -to highPC[6]
 set_location_assignment PIN_D19 -to highPC[5]
 set_location_assignment PIN_C19 -to highPC[4]
