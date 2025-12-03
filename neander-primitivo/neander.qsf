@@ -37,11 +37,11 @@
 
 
 set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE AUTO
+set_global_assignment -name DEVICE EP3C16F484C6
 set_global_assignment -name TOP_LEVEL_ENTITY neander
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:12:47  DECEMBER 03, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
@@ -64,5 +64,42 @@ set_global_assignment -name VHDL_FILE ../decoder/decoderNEANDER.vhd
 set_global_assignment -name QIP_FILE "../arithmetic-logic-unit/ulaNEANDER.qip"
 set_global_assignment -name BDF_FILE neander.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE onda.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/melch/cirdig/circuitos-digitais/neander-primitivo/onda.vwf"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_G21 -to clock
+set_location_assignment PIN_F1 -to reset
+set_location_assignment PIN_G3 -to step
+set_location_assignment PIN_B1 -to Nout
+set_location_assignment PIN_B2 -to Zout
+set_location_assignment PIN_J6 -to debugEnable
+set_location_assignment PIN_A13 -to highAC[6]
+set_location_assignment PIN_B13 -to highAC[5]
+set_location_assignment PIN_C13 -to highAC[4]
+set_location_assignment PIN_A14 -to highAC[3]
+set_location_assignment PIN_B14 -to highAC[2]
+set_location_assignment PIN_E14 -to highAC[1]
+set_location_assignment PIN_A15 -to highAC[0]
+set_location_assignment PIN_G15 -to highPC[6]
+set_location_assignment PIN_D19 -to highPC[5]
+set_location_assignment PIN_C19 -to highPC[4]
+set_location_assignment PIN_B19 -to highPC[3]
+set_location_assignment PIN_A19 -to highPC[2]
+set_location_assignment PIN_F15 -to highPC[1]
+set_location_assignment PIN_B18 -to highPC[0]
+set_location_assignment PIN_F13 -to lowAC[6]
+set_location_assignment PIN_F12 -to lowAC[5]
+set_location_assignment PIN_G12 -to lowAC[4]
+set_location_assignment PIN_H13 -to lowAC[3]
+set_location_assignment PIN_H12 -to lowAC[2]
+set_location_assignment PIN_F11 -to lowAC[1]
+set_location_assignment PIN_E11 -to lowAC[0]
+set_location_assignment PIN_D15 -to lowPC[0]
+set_location_assignment PIN_A16 -to lowPC[1]
+set_location_assignment PIN_B16 -to lowPC[2]
+set_location_assignment PIN_E15 -to lowPC[3]
+set_location_assignment PIN_A17 -to lowPC[4]
+set_location_assignment PIN_B17 -to lowPC[5]
+set_location_assignment PIN_F14 -to lowPC[6]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -38,17 +38,19 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY mux8b4
+set_global_assignment -name TOP_LEVEL_ENTITY mux2b
 set_global_assignment -name BDF_FILE mux2p1.bdf
 set_global_assignment -name BDF_FILE mux4b.bdf
 set_global_assignment -name BDF_FILE mux8b.bdf
 set_global_assignment -name BDF_FILE mux8b8.bdf
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:09:11  NOVEMBER 25, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name BDF_FILE mux4p1.bdf
 set_global_assignment -name BDF_FILE mux8b4.bdf
+set_global_assignment -name BDF_FILE mux2b.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE mux2b2.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
