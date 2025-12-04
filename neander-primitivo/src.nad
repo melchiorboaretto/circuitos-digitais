@@ -1,0 +1,14 @@
+.data
+
+	cavalo_baio: 34
+
+
+.code
+
+
+	LDA $10
+	SUB $1
+	NEG
+	ADD cavalo_baio
+
+	HLT
