@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 240 240)
+	(rect 16 16 240 272)
 	(text "decoderNEANDER" (rect 5 0 108 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -128,7 +128,14 @@ applicable agreement for further details.
 		(text "CargaNZ" (rect 153 187 203 201)(font "Arial" (font_size 8)))
 		(line (pt 224 192)(pt 208 192))
 	)
+	(port
+		(pt 224 208)
+		(output)
+		(text "halted" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "halted" (rect 169 203 203 217)(font "Arial" (font_size 8)))
+		(line (pt 224 208)(pt 208 208))
+	)
 	(drawing
-		(rectangle (rect 16 16 208 208))
+		(rectangle (rect 16 16 208 240))
 	)
 )
