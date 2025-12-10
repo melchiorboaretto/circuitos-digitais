@@ -20,14 +20,14 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 152 112)
-	(text "timerNEANDER" (rect 5 0 88 14)(font "Arial" (font_size 8)))
+	(rect 16 16 128 112)
+	(text "divfreq" (rect 5 0 45 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "goto_t0" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "goto_t0" (rect 21 27 63 41)(font "Arial" (font_size 8)))
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 27 36 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
@@ -38,20 +38,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 0 64)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 59 50 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 136 32)
+		(pt 112 32)
 		(output)
-		(text "t[15..0]" (rect 0 0 38 14)(font "Arial" (font_size 8)))
-		(text "t[15..0]" (rect 77 27 115 41)(font "Arial" (font_size 8)))
-		(line (pt 136 32)(pt 120 32)(line_width 3))
+		(text "saida" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "saida" (rect 61 27 91 41)(font "Arial" (font_size 8)))
+		(line (pt 112 32)(pt 96 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 120 80))
+		(rectangle (rect 16 16 96 80))
 	)
 )
